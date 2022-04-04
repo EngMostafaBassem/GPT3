@@ -1,0 +1,128 @@
+.gpt3_whgpt{
+  background: linear-gradient(to bottom right, #042C54, #1B78DE);
+  padding: 8rem;
+  &-sec1{
+      margin-bottom: 5rem;
+      display: flex;
+      align-items: flex-start;
+      &-head{
+      flex: 1;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      letter-spacing: -0.04em;
+      color: #FFFFFF;
+      position: relative;
+      &::before{
+          content: "";
+          position: absolute;  
+          width: 4rem;
+          height: 0.3rem;
+          background:linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+          bottom: 4rem;
+          left: 0;
+
+      } 
+      }
+      &-text{
+        flex: 2;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: #81AFDD;
+      }
+      @media screen and(max-width:900px) {
+          flex-direction: column;
+          
+      }
+  }
+  &-sec2{
+      margin-bottom: 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+       &-text-left{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 34px;
+        line-height: 45px;
+        background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        width: 42rem; 
+        word-wrap: break-word;
+        @media screen and(max-width:900px) {  
+            font-size: 20px;
+            width: 20rem;  
+        }
+       }
+       &-text-right{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FF8A71;
+        cursor: pointer;
+       }
+       @media screen and(max-width:900px) {  
+        flex-direction: column;
+        
+    }
+  }
+
+  &-sec3{
+      display: flex;
+      justify-content: space-between;
+      &-box{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-right: 2rem;
+          &-head{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 75px;   
+            letter-spacing: -0.04em;   
+            color: #FFFFFF;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;  
+                width: 4rem;
+                height: 0.3rem;
+                background:linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+                bottom: 6rem;
+                left: 0;
+      
+            } 
+          }
+          &-text{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            /* or 188% */
+            
+            
+            color: #81AFDD;
+            
+
+          }
+      }
+      @media screen and(max-width:900px) {
+        flex-direction: column;
+        
+    }
+  }
+}
+

@@ -1,0 +1,53 @@
+.gpt3_cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    border-radius: 10.7236px;
+    padding:5rem;
+    margin-top: 15rem;
+    &-content{
+        display: flex;
+        flex-direction: column;
+      &-subtitle{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 30px;
+        color: #0E0E0E;
+      }
+      &-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 45px;
+        color: #000000;
+
+      }
+    }
+    &-btn{
+        background: #040C18;
+        border: none;
+        outline: none;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding: 1rem 4rem;
+        border-radius: 2.5rem;
+        align-self: flex-end;
+        cursor: pointer;
+        @media screen and(max-width:768px) {
+          align-self: flex-start;
+            
+        }
+    }
+    @media screen and(max-width:768px) {
+        flex-direction: column;
+        
+    }
+}

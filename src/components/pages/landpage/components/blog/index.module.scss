@@ -1,0 +1,123 @@
+.gpt3_blog{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    &-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 62px;
+        line-height: 85px;
+        letter-spacing: -0.04em;
+        background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        width: 70rem;
+        margin-bottom: 10rem;
+
+        @media screen and(max-width:1200px) {
+            font-size: 42px;
+            margin: auto;
+            
+        }
+        @media screen and(max-width:768px) {
+            font-size: 20px;
+            margin: auto;
+            
+        }
+    }
+    &-container{
+        display: grid; 
+        grid-template-areas: 'block1 block2 block3'
+                             'block1 block4 block5';                     
+        grid-gap:2rem ; 
+
+        @media screen and(max-width:1200px) {
+            grid-template-areas: 'block1 block2'
+                                 'block3 block4'
+                                 'block5'
+            ;
+            
+        } 
+
+        @media screen and(max-width:768px) {
+            grid-template-areas: 'block1'
+                                 'block2'
+                                 'block3'
+                                 'block4'
+                                 'block5'
+            ;
+            
+        } 
+
+    }
+}
+.block{
+    background-color:#042C54;
+    position: relative;
+    &-img{
+       height: 40%;
+       width: 100%;
+       img{
+           width: 100%;
+           height: 100%;
+           object-fit:cover;
+       }       
+    }
+    &-content{     
+        padding: 3rem;    
+        display: flex;
+        flex-direction: column;       
+       &-date{    
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11.649px;
+        line-height: 35px;
+        color: #FFFFFF
+       
+       } 
+       &-text{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 19.3154px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-bottom: 5rem;
+
+       }
+       &-link{ 
+        position: absolute;
+        bottom:2rem;
+        left:2rem ;  
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11.649px;
+        line-height: 35px;
+        color: #FFFFFF;
+       }
+    }
+
+}
+.block--1{
+ grid-area: block1;
+ 
+}
+.block--2{
+ grid-area: block2;
+}
+.block--3{
+ grid-area: block3;
+}
+.block--4{
+ grid-area: block4;
+}
+.block--5{
+ grid-area: block5;
+}

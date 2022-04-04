@@ -1,0 +1,10 @@
+.gpt3_brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    flex-wrap: wrap;
+    &-logo{
+     margin: 0 3.5rem;
+    }
+}
